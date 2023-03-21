@@ -1,7 +1,7 @@
 <div class="container">
   <h4>Basic Airbnb</h4>
   <div class="m-5"></div>
-  <h1>All our flats (<%= @flats_count %>)</h1>
+  <h1 class="px-3">All our flats (<%= @flats_count %>)</h1>
   <div class="m-5"></div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <% @flats.each do |flat| %>
@@ -14,7 +14,7 @@
               <%= flat.address %></p>
             <%# <p class="card-text"><%= flat.description %>
             <%# </p> %>
-            <div class="d-flex py-4">
+            <div class="d-flex">
               <p><i class="fa-solid fa-euro-sign">
               <%= flat.price_per_night %></i></p>
               <p class="mx-3"><i class="fa-solid fa-users">
